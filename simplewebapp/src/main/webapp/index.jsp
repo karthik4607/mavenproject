@@ -1,10 +1,3 @@
-<%@ page language="java" %>
-<%@ page import="javax.servlet.http.HttpServletRequest" %>
-
-<%
-    HttpServletRequest request = (HttpServletRequest) request;
-    String hostname = httpRequest.getServerName();
-%>
 <html>
 <body>
 <h2>Hello Karthik</h2>
