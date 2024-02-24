@@ -3,7 +3,7 @@
 
 <%
     HttpServletRequest request = (HttpServletRequest) request;
-    String hostname = request.getServerName();
+    String hostname = httpRequest.getServerName();
 %>
 <html>
 <body>
