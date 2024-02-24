@@ -1,6 +1,7 @@
 <html>
 <body>
 <h2>Hello Karthik</h2>
-<h1>Hostname</h1>
+<p1>Welcome to Karthik Technologies</p1>
+<p2>Hyderabd</p2>
 </body>
 </html>
