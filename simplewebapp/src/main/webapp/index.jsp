@@ -6,5 +6,6 @@
 <a href="login.jsp">login</a>|  
 <a href="logout.jsp">logout</a>|  
 <a href="profile.jsp">profile</a> 
+background-color:#92a8d1;
 </body>
 </html>
