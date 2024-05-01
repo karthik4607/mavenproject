@@ -1,5 +1,5 @@
 <html>
-<body style='background-color: black;'>
+<body style='background-color: blue;'>
 <h1>Karthik Technologies</h1>
 <a href="login.jsp">login</a>|  
 <a href="logout.jsp">logout</a>|  
