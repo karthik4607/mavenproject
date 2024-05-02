@@ -21,7 +21,7 @@ pipeline{
        echo 'docker login sucess'
          }
          
-        sh " docker push kstk4607/myapp:v1"
+        sh "docker push kstk4607/myapp:v1"
                        
                  }
             }  
