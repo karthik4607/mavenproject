@@ -12,6 +12,7 @@ pipeline{
     stage('build'){
       steps{
       sh 'docker build -t v1:new .'
+      sh "docker tag v1:new kstk4607/myapp:v1"  
           }
       }
     stage('login'){
@@ -19,8 +20,7 @@ pipeline{
       withCredentials([usernamePassword(credentialsId: 'dockerid', passwordVariable: 'pwd', usernameVariable: 'username')]) {
        echo 'docker login sucess'
          }
-        sh "docker logout"
-        sh " docker tag v1:new kstk4607/myapp:v1"
+         
         sh " docker push kstk4607/myapp:v1"
                        
                  }
