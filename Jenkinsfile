@@ -12,7 +12,7 @@ pipeline{
     stage('build'){
       steps{
       sh 'docker build -t v1:new .'
-      sh "docker tag v1:new kstk4607/myapp:v1"  
+      sh 'docker tag v1:new kstk4607/myapp:v1'  
           }
       }
     stage('login'){
@@ -21,7 +21,7 @@ pipeline{
        echo 'docker login sucess'
          }
          
-        sh "docker push kstk4607/myapp:v1"
+        sh 'docker push kstk4607/myapp:v1'
                        
                  }
             }  
