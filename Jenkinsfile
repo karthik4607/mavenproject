@@ -18,7 +18,7 @@ pipeline{
       steps{
       withCredentials([usernamePassword(credentialsId: 'dockerid', passwordVariable: 'pwd', usernameVariable: 'username')]) {
        echo 'docker login sucess'
-        sh " docker tag kstk4607/myapp:v1 v1:new"
+        sh " docker tag v1:new kstk4607/myapp:v1"
         sh " docker push kstk4607/myapp:v1"
                        }
                  }
