@@ -12,7 +12,7 @@ pipeline{
       }
       stage('build'){
         steps{
-         sh 'mvn clean install package'
+         sh 'mvn simplewebapp/pom.xml clean install package'
         
            }
         }
