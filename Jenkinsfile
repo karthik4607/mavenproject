@@ -11,16 +11,20 @@ pipeline{
     }
     stage('build'){
       steps{
-      sh 'docker build -t new .'
+      sh 'docker build -t v1:new .'
           }
       }
     stage('login'){
       steps{
       withCredentials([usernamePassword(credentialsId: 'dockerid', passwordVariable: 'pwd', usernameVariable: 'username')]) {
        echo 'docker login sucess'
+        sh " docker tag kstk4607/myapp:v1 v1:new"
+        sh " docker push kstk4607/myapp:v1"
                        }
                  }
             }  
-        }
+     
+  
+      }
   
   }
